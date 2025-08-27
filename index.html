@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdgeCut Barbershop - Premium Experience</title>
+    <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* CSS Reset and Variables */
         * {
             margin: 0;
             padding: 0;
@@ -22,6 +24,8 @@
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             --shadow-hover: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
+        
+        /* Base Styles */
         body {
             font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
             color: var(--ash-dark);
@@ -45,6 +49,8 @@
             max-width: 100%;
             height: auto;
         }
+        
+        /* Container and Utility Classes */
         .container {
             width: 90%;
             max-width: 1200px;
@@ -95,6 +101,8 @@
             height: 3px;
             background-color: var(--black);
         }
+        
+        /* Header and Navigation */
         header {
             position: fixed;
             top: 0;
@@ -161,6 +169,8 @@
             cursor: pointer;
             color: var(--black);
         }
+        
+        /* Hero Section */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('') center/cover no-repeat;
@@ -186,6 +196,8 @@
             margin-bottom: 30px;
             opacity: 0.9;
         }
+        
+        /* Services Section */
         .services {
             background-color: var(--ash-light);
         }
@@ -295,6 +307,8 @@
             background-color: #c19d2f;
             transform: scale(1.05);
         }
+        
+        /* Service Detail Modal */
         .service-detail-modal {
             position: fixed;
             top: 0;
@@ -405,6 +419,8 @@
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+        
+        /* Availability Checker */
         .availability-checker {
             background-color: var(--ash-light);
             padding: 20px;
@@ -498,6 +514,8 @@
             color: #999;
             cursor: not-allowed;
         }
+        
+        /* Service Customizer */
         .service-customizer {
             background-color: var(--ash-light);
             padding: 25px;
@@ -603,6 +621,8 @@
             color: var(--primary);
             font-size: 0.9rem;
         }
+        
+        /* Gallery Section */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -648,6 +668,8 @@
             font-size: 0.8rem;
             opacity: 0.8;
         }
+        
+        /* Booking Section */
         .booking {
             background-color: var(--black);
             color: var(--white);
@@ -734,6 +756,8 @@
             margin-top: 5px;
             display: none;
         }
+        
+        /* Selected Service Preview */
         .selected-service-preview {
             background-color: var(--ash-light);
             border-radius: 10px;
@@ -784,6 +808,8 @@
             margin-top: 10px;
             text-decoration: underline;
         }
+        
+        /* Service Specific Questions */
         .service-specific-questions {
             background-color: var(--ash-light);
             padding: 20px;
@@ -827,6 +853,8 @@
             color: var(--ash-dark);
             margin-left: 10px;
         }
+        
+        /* Package Builder */
         .package-builder {
             background-color: var(--ash-light);
             padding: 30px;
@@ -905,6 +933,8 @@
             color: var(--ash-dark);
             margin-bottom: 0;
         }
+        
+        /* Testimonials Section */
         .testimonials {
             background-color: var(--ash-light);
             position: relative;
@@ -998,6 +1028,8 @@
             background-color: var(--black);
             transform: scale(1.2);
         }
+        
+        /* Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1039,6 +1071,8 @@
             height: 100%;
             border: none;
         }
+        
+        /* Footer */
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -1106,6 +1140,8 @@
             font-size: 0.9rem;
             opacity: 0.7;
         }
+        
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1135,6 +1171,8 @@
             opacity: 1;
             transform: translateY(0);
         }
+        
+        /* Responsive Design */
         @media (max-width: 992px) {
             .section {
                 padding: 60px 0;
@@ -1245,6 +1283,7 @@
     </style>
 </head>
 <body>
+    <!-- HEADER SECTION -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -1265,6 +1304,8 @@
             </nav>
         </div>
     </header>
+    
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
         <div class="container hero-content">
             <h2>Sharp Cuts, Clean Lines</h2>
@@ -1272,6 +1313,8 @@
             <a href="#booking" class="btn">Book an Appointment</a>
         </div>
     </section>
+    
+    <!-- SERVICES SECTION -->
     <section class="section services" id="services">
         <div class="container">
             <h2 class="section-title fade-in">Our Premium Services</h2>
@@ -1360,6 +1403,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- PACKAGE BUILDER SECTION -->
     <section class="section">
         <div class="container">
             <h2 class="section-title fade-in">Build Your Perfect Package</h2>
@@ -1392,6 +1437,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- GALLERY SECTION -->
     <section class="section" id="gallery">
         <div class="container">
             <h2 class="section-title fade-in">Style Gallery</h2>
@@ -1441,6 +1488,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- BOOKING SECTION -->
     <section class="section booking" id="booking">
         <div class="container">
             <h2 class="section-title">Book an Appointment</h2>
@@ -1660,6 +1709,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- TESTIMONIALS SECTION -->
     <section class="section testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title">What Our Clients Say</h2>
@@ -1710,6 +1761,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- CONTACT SECTION -->
     <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title fade-in">Contact Us</h2>
@@ -1751,6 +1804,8 @@
             </div>
         </div>
     </section>
+    
+    <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -1800,6 +1855,8 @@
             </div>
         </div>
     </footer>
+    
+    <!-- SERVICE DETAIL MODAL -->
     <div class="service-detail-modal" id="service-modal">
         <div class="modal-content">
             <button class="close-modal" id="close-modal">&times;</button>
@@ -1855,17 +1912,24 @@
             </div>
         </div>
     </div>
+    
+    <!-- JAVASCRIPT -->
     <script>
+        // Mobile Navigation Toggle
         const mobileToggle = document.getElementById('mobile-toggle');
         const navMenu = document.getElementById('nav-menu');
         mobileToggle.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });
+        
+        // Close mobile menu when clicking links
         document.querySelectorAll('nav ul li a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('show');
             });
         });
+        
+        // Header scroll effect
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -1874,6 +1938,8 @@
                 header.classList.remove('scrolled');
             }
         });
+        
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1887,6 +1953,8 @@
                 }
             });
         });
+        
+        // Fade-in animation on scroll
         const fadeElements = document.querySelectorAll('.fade-in');
         const fadeInOnScroll = () => {
             fadeElements.forEach(element => {
@@ -1899,6 +1967,8 @@
         };
         fadeInOnScroll();
         window.addEventListener('scroll', fadeInOnScroll);
+        
+        // Service details data
         const serviceImages = {
             haircut: '',
             beard: '',
@@ -1907,6 +1977,7 @@
             facial: '',
             complete: ''
         };
+        
         const serviceDetails = {
             haircut: {
                 title: 'Precision Haircut',
@@ -1988,6 +2059,8 @@
                 ]
             }
         };
+        
+        // Service card click handlers
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('click', function() {
                 const service = this.getAttribute('data-service');
@@ -1998,6 +2071,8 @@
                 });
             });
         });
+        
+        // View details button handlers
         document.querySelectorAll('.view-details').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -2005,12 +2080,15 @@
                 openServiceModal(service);
             });
         });
+        
+        // Modal functionality
         const serviceModal = document.getElementById('service-modal');
         const closeModal = document.getElementById('close-modal');
         const modalTitle = document.getElementById('modal-service-title');
         const modalDuration = document.getElementById('modal-duration');
         const modalDescription = document.getElementById('modal-service-description');
         const modalBookNow = document.getElementById('modal-book-now');
+        
         function openServiceModal(service) {
             const details = serviceDetails[service];
             modalTitle.textContent = details.title;
@@ -2030,20 +2108,25 @@
             });
             serviceModal.style.display = 'flex';
         }
+        
         closeModal.addEventListener('click', () => {
             serviceModal.style.display = 'none';
         });
+        
         serviceModal.addEventListener('click', (e) => {
             if (e.target === serviceModal) {
                 serviceModal.style.display = 'none';
             }
         });
+        
+        // Service preview functionality
         const selectedServicePreview = document.getElementById('selected-service-preview');
         const previewImage = document.getElementById('preview-image');
         const previewTitle = document.getElementById('preview-title');
         const previewDescription = document.getElementById('preview-description');
         const previewPrice = document.getElementById('preview-price');
         const serviceSelect = document.getElementById('service');
+        
         function updateServicePreview(service) {
             if (service && serviceImages[service]) {
                 previewImage.src = serviceImages[service];
@@ -2061,6 +2144,7 @@
                 }
             }
         }
+        
         document.getElementById('remove-selection').addEventListener('click', function() {
             selectedServicePreview.classList.remove('active');
             serviceSelect.value = '';
@@ -2068,6 +2152,7 @@
                 el.classList.remove('active');
             });
         });
+        
         serviceSelect.addEventListener('change', function() {
             if (this.value) {
                 updateServicePreview(this.value);
@@ -2078,10 +2163,14 @@
                 });
             }
         });
+        
+        // File upload handling
         document.getElementById('inspiration-photo').addEventListener('change', function() {
             const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
             document.getElementById('file-name').textContent = fileName;
         });
+        
+        // Package selection
         document.querySelectorAll('.package-option').forEach(option => {
             option.addEventListener('click', function() {
                 document.querySelectorAll('.package-option').forEach(opt => {
@@ -2102,9 +2191,12 @@
                 }
             });
         });
+        
         document.querySelector('.custom-package').addEventListener('click', function() {
             alert('Custom package builder activated! Select individual services to create your perfect grooming experience.');
         });
+        
+        // Barber selection
         document.querySelectorAll('.barber-card').forEach(card => {
             card.addEventListener('click', function() {
                 document.querySelectorAll('.barber-card').forEach(c => {
@@ -2113,6 +2205,8 @@
                 this.style.borderColor = 'var(--primary)';
             });
         });
+        
+        // Testimonial slider
         const testimonialSlider = document.getElementById('testimonial-slider');
         const dots = document.querySelectorAll('.dot');
         let currentSlide = 0;
@@ -2127,16 +2221,19 @@
                 }
             });
         };
+        
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
                 currentSlide = parseInt(dot.getAttribute('data-index'));
                 updateSlider();
             });
         });
+        
         const autoSlide = () => {
             currentSlide = (currentSlide + 1) % dots.length;
             updateSlider();
         };
+        
         let slideInterval = setInterval(autoSlide, 5000);
         dots.forEach(dot => {
             dot.addEventListener('mouseenter', () => {
@@ -2146,6 +2243,8 @@
                 slideInterval = setInterval(autoSlide, 5000);
             });
         });
+        
+        // Availability checker
         document.getElementById('availability-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const date = document.getElementById('check-date').value;
@@ -2155,6 +2254,8 @@
                 document.getElementById('availability-results').style.display = 'block';
             }
         });
+        
+        // Form validation
         const bookingForm = document.getElementById('booking-form');
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
@@ -2167,6 +2268,7 @@
         const serviceError = document.getElementById('service-error');
         const dateError = document.getElementById('date-error');
         const timeError = document.getElementById('time-error');
+        
         const validateName = () => {
             const nameValue = nameInput.value.trim();
             if (nameValue === '' || nameValue.length < 2) {
@@ -2179,6 +2281,7 @@
                 return true;
             }
         };
+        
         const validateEmail = () => {
             const emailValue = emailInput.value.trim();
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -2192,6 +2295,7 @@
                 return true;
             }
         };
+        
         const validatePhone = () => {
             const phoneValue = phoneInput.value.trim();
             const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
@@ -2205,6 +2309,7 @@
                 return true;
             }
         };
+        
         const validateService = () => {
             if (serviceSelect.value === '') {
                 serviceSelect.classList.add('error');
@@ -2216,6 +2321,7 @@
                 return true;
             }
         };
+        
         const validateDate = () => {
             if (dateInput.value === '') {
                 dateInput.classList.add('error');
@@ -2227,6 +2333,7 @@
                 return true;
             }
         };
+        
         const validateTime = () => {
             if (timeSelect.value === '') {
                 timeSelect.classList.add('error');
@@ -2238,12 +2345,16 @@
                 return true;
             }
         };
+        
+        // Set minimum date for forms
         const today = new Date();
         const dateString = today.getFullYear() + '-' + 
             String(today.getMonth() + 1).padStart(2, '0') + '-' + 
             String(today.getDate()).padStart(2, '0');
         document.getElementById('check-date').setAttribute('min', dateString);
         dateInput.setAttribute('min', dateString);
+        
+        // Form submission
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const isNameValid = validateName();
@@ -2259,18 +2370,26 @@
                 const extras = [];
                 if (document.getElementById('scalp-massage').checked) extras.push('Scalp Massage');
                 if (document.getElementById('premium-products').checked) extras.push('Premium Products');
-                let confirmationMessage = `Thank you for your booking!\n`;
-                confirmationMessage += `Service: ${serviceText}\n`;
+                let confirmationMessage = `Thank you for your booking!
+`;
+                confirmationMessage += `Service: ${serviceText}
+`;
                 if (extras.length > 0) {
-                    confirmationMessage += `Extras: ${extras.join(', ')}\n`;
+                    confirmationMessage += `Extras: ${extras.join(', ')}
+`;
                 }
-                confirmationMessage += `Barber: ${barber}\n`;
-                confirmationMessage += `Date: ${dateInput.value}\n`;
-                confirmationMessage += `Time: ${timeSelect.value}\n`;
+                confirmationMessage += `Barber: ${barber}
+`;
+                confirmationMessage += `Date: ${dateInput.value}
+`;
+                confirmationMessage += `Time: ${timeSelect.value}
+`;
                 if (document.getElementById('notes').value) {
-                    confirmationMessage += `Notes: ${document.getElementById('notes').value}\n`;
+                    confirmationMessage += `Notes: ${document.getElementById('notes').value}
+`;
                 }
-                confirmationMessage += `\nWe will contact you to confirm your appointment.`;
+                confirmationMessage += `
+We will contact you to confirm your appointment.`;
                 alert(confirmationMessage);
                 bookingForm.reset();
                 selectedServicePreview.classList.remove('active');
@@ -2282,12 +2401,16 @@
                 });
             }
         });
+        
+        // Input validation on blur
         nameInput.addEventListener('blur', validateName);
         emailInput.addEventListener('blur', validateEmail);
         phoneInput.addEventListener('blur', validatePhone);
         serviceSelect.addEventListener('change', validateService);
         dateInput.addEventListener('change', validateDate);
         timeSelect.addEventListener('change', validateTime);
+        
+        // Newsletter subscription
         const newsletterForm = document.getElementById('newsletter-form');
         newsletterForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -2297,6 +2420,8 @@
                 newsletterForm.reset();
             }
         });
+        
+        // Modal book now button
         modalBookNow.addEventListener('click', () => {
             serviceModal.style.display = 'none';
             window.scrollTo({
